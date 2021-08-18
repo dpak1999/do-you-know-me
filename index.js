@@ -10,7 +10,7 @@ console.log(chalk.bold.red("Lets check how much you know me!!"));
 let score = 0;
 
 const evalute = (question, answer) => {
-  console.log(chalk.bgYellow.red.bold(question));
+  console.log(chalk.bgCyan.red.bold(question));
   const userInput = readLine.question().toLowerCase();
 
   if (userInput === answer.toLowerCase()) {
@@ -41,6 +41,7 @@ if (score >= highScore[0].score) {
     chalk.green.bold("\nYayyy!! You scored the Highest Score! Congratulations!")
   );
 } else {
+  console.log(chalk.green.underline("Here are the highscores"))
   for (let i = 0; i < highScore.length; i++) {
     console.log(highScore[i].name, highScore[i].score);
   }
