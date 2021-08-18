@@ -13,7 +13,7 @@ const evalute = (question, answer) => {
   console.log(chalk.bgYellow.red.bold(question));
   const userInput = readLine.question().toLowerCase();
 
-  if (userInput === answer) {
+  if (userInput === answer.toLowerCase()) {
     score += 1;
     console.log("your score is is " + score);
   } else {
