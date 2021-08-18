@@ -41,7 +41,7 @@ if (score >= highScore[0].score) {
     chalk.green.bold("\nYayyy!! You scored the Highest Score! Congratulations!")
   );
 } else {
-  console.log(chalk.green.underline("Here are the highscores"))
+  console.log(chalk.green.underline("Here are the highscores"));
   for (let i = 0; i < highScore.length; i++) {
     console.log(highScore[i].name, highScore[i].score);
   }
